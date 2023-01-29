@@ -11,3 +11,42 @@
     font-family: 'Gilmer Light';
     src: url("../fonts/GilmerLight.otf") format("opentype");
 }
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Chalet', Arial, Helvetica, sans-serif;
+    margin: 0;
+    overflow-x: hidden
+}
+
+/**Header**/
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4.625rem;
+    background-color: white;
+    font-family: 'Chalet2', Arial, Helvetica, sans-serif
+}
+
+header .logo {
+    margin-right: auto;
+}
+
+header .logo a img{
+    margin-right: auto;
+    width: 10rem;
+    margin-left: 2rem;
+}
+
