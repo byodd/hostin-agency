@@ -37,7 +37,8 @@ header {
     left: 0;
     height: 4.625rem;
     padding-top: 0.5rem;
-    background-color: white;
+    padding-bottom: 0.5rem;
+    z-index: 100;
     font-family: 'Gilmer Regular', Arial, Helvetica, sans-serif
 }
 
@@ -59,7 +60,7 @@ header .logo a img{
 
 .menu a {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     font-size: 1.125rem;
     margin-left: 3rem;
 	overflow: hidden;
@@ -108,4 +109,13 @@ header .logo a img{
     color: #f62b32;
     background-color: #ffffff;
     outline: 1px solid #f62b32;
+}
+
+/**Main**/
+.main-video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    filter: brightness(20%);
 }
