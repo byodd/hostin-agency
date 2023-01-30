@@ -61,7 +61,7 @@ header .logo a img{
 .menu a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     margin-left: 3rem;
 	overflow: hidden;
     display: block;
@@ -88,8 +88,8 @@ header .logo a img{
 }
 
 .menu a:not(:last-child)::after {
-	opacity 1;
-	transform: translate3d(-100%, 0, 0);
+	opacity: 1;
+	transform: translate3d(-200%, 0, 0);
 }
 
 .menu a:not(:last-child):hover::after,
@@ -107,7 +107,7 @@ header .logo a img{
 
 .menu a:last-child:hover {
     color: #f62b32;
-    background-color: #ffffff;
+    background-color: #ffffff0f;
     outline: 1px solid #f62b32;
 }
 
@@ -117,5 +117,41 @@ header .logo a img{
     height: 100vh;
     object-fit: cover;
     display: block;
-    filter: brightness(20%);
+    filter: brightness(75%);
+}
+
+.maintext{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 2rem;
+    top: 60%;
+    right: 10%;
+    color: #ffffff;
+    font-family: 'Gilmer Light', Arial, Helvetica, sans-serif;
+}
+
+.maintext p{
+    margin: 0.3rem;
+}
+
+.maintext a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f62b32;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-family: 'Gilmer Regular', Arial, Helvetica, sans-serif;
+}
+
+.maintext a:hover {
+    background-color: #ffffff0f;
+}
+
+.maintext a span:last-child {
+    margin-left: 0.6rem;
 }
