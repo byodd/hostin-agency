@@ -40,7 +40,13 @@ header {
     background-color: #ffffff;
     padding-bottom: 0.5rem;
     z-index: 100;
-    font-family: 'Gilmer Regular', Arial, Helvetica, sans-serif
+    font-family: 'Gilmer Regular', Arial, Helvetica, sans-serif;
+    transition: all .3s;
+    height: 0px;
+}
+header div{
+    opacity: 0;
+    transition: all .3s;
 }
 
 header .logo {
@@ -143,4 +149,11 @@ h1 {
     align-self: center;
     width: 50%;
     text-align: center;
+}
+
+.visible{
+    height: 4.625rem;
+}
+.visible div{
+    opacity: 1;
 }
