@@ -1,0 +1,146 @@
+/**Fonts**/
+@font-face {
+    font-family: 'Gilmer Bold';
+    src: url("../fonts/GilmerBold.otf") format("opentype");
+}
+@font-face {
+    font-family: 'Gilmer Regular';
+    src: url("../fonts/GilmerRegular.otf") format("opentype");
+}
+@font-face {
+    font-family: 'Gilmer Light';
+    src: url("../fonts/GilmerLight.otf") format("opentype");
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Gilmer Regular', Arial, Helvetica, sans-serif;
+    margin: 0;
+    overflow-x: hidden
+}
+
+/**Header**/
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4.625rem;
+    padding-top: 0.5rem;
+    background-color: #ffffff;
+    padding-bottom: 0.5rem;
+    z-index: 100;
+    font-family: 'Gilmer Regular', Arial, Helvetica, sans-serif
+}
+
+header .logo {
+    margin-right: auto;
+}
+
+header .logo a img{
+    margin-right: auto;
+    width: 10rem;
+    margin-left: 5rem;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-right: 5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.2rem;
+    margin-left: 3rem;
+	overflow: hidden;
+    display: block;
+	position: relative;
+	padding: 0.2em 0;
+}
+
+.menu a:not(:last-child)::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.1em;
+	background-color: rgb(255, 255, 255);
+	opacity: 0;
+	transition: opacity 300ms, transform 300ms;
+}
+
+.menu a:not(:last-child):hover::after,
+.menu a:not(:last-child):focus::after {
+	opacity: 1;
+	transform: translate3d(0, 0.2em, 0);
+}
+
+.menu a:not(:last-child)::after {
+	opacity: 1;
+	transform: translate3d(-200%, 0, 0);
+}
+
+.menu a:not(:last-child):hover::after,
+.menu a:not(:last-child):focus::after{
+	transform: translate3d(0, 0, 0);
+}
+
+.menu a:last-child {
+    color: #ffffff;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    background-color: #f62b32;
+    font-family: 'Gilmer Bold', 'Gilmer Regular', Arial, Helvetica, sans-serif;
+}
+
+.menu a:last-child:hover {
+    color: #f62b32;
+    background-color: #ffffff0f;
+    outline: 1px solid #f62b32;
+}
+
+/**Main**/
+
+.container {
+    width: 100%;
+    margin-top: 4.625rem;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Gilmer Light', Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    color: #000000;
+    padding: 5rem;
+    text-align: center;
+}
+
+.p1z1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #f62b320f;
+}
+
+.p1z1 img {
+    width: 50%;
+}
+
+.p1z1 .bio {
+    align-self: center;
+    width: 50%;
+    text-align: center;
+}
