@@ -36,9 +36,9 @@ header {
     top: 0;
     left: 0;
     height: 4.625rem;
-    padding-top: 0.5rem;
+    margin-top: 0.5rem;
     background-color: #ffffff;
-    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
     z-index: 100;
     font-family: 'Gilmer Regular', Arial, Helvetica, sans-serif;
     transition: all .3s;
@@ -83,7 +83,7 @@ header .logo a img{
 	left: 0;
 	width: 100%;
 	height: 0.1em;
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
 	opacity: 0;
 	transition: opacity 300ms, transform 300ms;
 }
@@ -138,17 +138,24 @@ h1 {
     display: flex;
     flex-direction: row;
     width: 100%;
-    background-color: #f62b320f;
 }
 
 .p1z1 img {
-    width: 50%;
+    width: 60%;
 }
 
 .p1z1 .bio {
     align-self: center;
+    width: 30%;
+    text-align: left;
+    padding: 5rem;
+}
+
+.biobig{
     width: 50%;
-    text-align: center;
+    padding: 10rem;
+    text-align: left;
+    font-size: 3rem;
 }
 
 .visible{
@@ -156,4 +163,24 @@ h1 {
 }
 .visible div{
     opacity: 1;
+}
+
+
+
+@media screen and (max-width: 965px) {
+    .p1z1 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .p1z1 img {
+        width: 100%;
+    }
+
+    .bio, .biobig {
+        width: 100%;
+        padding-left: 5rem;  
+    }
+
+
 }
