@@ -3,10 +3,12 @@
     font-family: 'Gilmer Bold';
     src: url("../fonts/GilmerBold.otf") format("opentype");
 }
+
 @font-face {
     font-family: 'Gilmer Regular';
     src: url("../fonts/GilmerRegular.otf") format("opentype");
 }
+
 @font-face {
     font-family: 'Gilmer Light';
     src: url("../fonts/GilmerLight.otf") format("opentype");
@@ -44,7 +46,8 @@ header {
     transition: all .3s;
     height: 0px;
 }
-header div{
+
+header div {
     opacity: 0;
     transition: all .3s;
 }
@@ -53,7 +56,7 @@ header .logo {
     margin-right: auto;
 }
 
-header .logo a img{
+header .logo a img {
     margin-right: auto;
     width: 10rem;
     margin-left: 5rem;
@@ -70,38 +73,38 @@ header .logo a img{
     color: #000000;
     font-size: 1.2rem;
     margin-left: 3rem;
-	overflow: hidden;
+    overflow: hidden;
     display: block;
-	position: relative;
-	padding: 0.2em 0;
+    position: relative;
+    padding: 0.2em 0;
 }
 
 .menu a:not(:last-child)::after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 0.1em;
-	background-color: rgb(0, 0, 0);
-	opacity: 0;
-	transition: opacity 300ms, transform 300ms;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
 }
 
 .menu a:not(:last-child):hover::after,
 .menu a:not(:last-child):focus::after {
-	opacity: 1;
-	transform: translate3d(0, 0.2em, 0);
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
 }
 
 .menu a:not(:last-child)::after {
-	opacity: 1;
-	transform: translate3d(-200%, 0, 0);
+    opacity: 1;
+    transform: translate3d(-200%, 0, 0);
 }
 
 .menu a:not(:last-child):hover::after,
-.menu a:not(:last-child):focus::after{
-	transform: translate3d(0, 0, 0);
+.menu a:not(:last-child):focus::after {
+    transform: translate3d(0, 0, 0);
 }
 
 .menu a:last-child {
@@ -130,7 +133,8 @@ h1 {
     font-family: 'Gilmer Light', Arial, Helvetica, sans-serif;
     font-size: 4rem;
     color: #000000;
-    padding: 5rem;
+    padding: 13rem;
+    padding-top: 10rem;
     text-align: center;
 }
 
@@ -142,6 +146,9 @@ h1 {
 
 .p1z1 img {
     width: 60%;
+    transition: 1.5s ease;
+    opacity: 0;
+    transform: translateX(-100%);
 }
 
 .p1z1 .bio {
@@ -149,23 +156,79 @@ h1 {
     width: 30%;
     text-align: left;
     padding: 5rem;
+    opacity: 0;
+    transition: 0.8s ease;
 }
 
-.biobig{
-    width: 50%;
+.biobig {
+    display: flex;
+    flex-direction: column;
     padding: 10rem;
     text-align: left;
     font-size: 3rem;
+    opacity: 0;
+    width: 100%;
+    align-items: center;
 }
 
-.visible{
+.visible {
     height: 4.625rem;
 }
-.visible div{
+
+.visible div {
     opacity: 1;
 }
 
+.p1z1 p{
+    font-size: 1.5rem;
+    color: #000000;
+    font-family: 'Gilmer Regular', Arial, Helvetica, sans-serif;
+}
 
+  
+  .ml11 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+  }
+  
+  .ml11 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 5px;
+    background-color: #f62b32;
+    transform-origin: 0 50%;
+    border-radius: 1rem;
+  }
+  
+  .ml11 .line1 { 
+    top: 0; 
+    left: 0;
+  }
+  
+  .ml11 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+
+  .js-scroll {
+    opacity: 0;
+    padding-bottom: 5rem;
+    transition: ease 2s;
+  }
+  
+  .js-scroll.scrolled {
+    opacity: 1;
+  }
+
+  .scrolled.fade-in-bottom {
+    animation: fade-in-bottom 1s ease-in both;
+  }
 
 @media screen and (max-width: 965px) {
     .p1z1 {
@@ -177,10 +240,10 @@ h1 {
         width: 100%;
     }
 
-    .bio, .biobig {
+    .bio,
+    .biobig {
         width: 100%;
-        padding-left: 5rem;  
+        padding-left: 5rem;
     }
-
 
 }
