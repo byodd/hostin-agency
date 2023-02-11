@@ -163,12 +163,12 @@ h1 {
 .biobig {
     display: flex;
     flex-direction: column;
-    padding: 10rem;
+    padding: 15rem;
     text-align: left;
     font-size: 3rem;
     opacity: 0;
     width: 100%;
-    align-items: center;
+    align-items: left;
 }
 
 .visible {
@@ -218,7 +218,7 @@ h1 {
 
   .js-scroll {
     opacity: 0;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
     transition: ease 2s;
   }
   
@@ -228,6 +228,15 @@ h1 {
 
   .scrolled.fade-in-bottom {
     animation: fade-in-bottom 1s ease-in both;
+  }
+
+  figure img{
+    position: absolute;
+  }
+
+  .imgh2{
+    width: 35%;
+    overflow: hidden;
   }
 
 @media screen and (max-width: 965px) {
