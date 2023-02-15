@@ -278,6 +278,30 @@ figure img {
     margin-bottom: 20rem;
 }
 
+.p1z3 div{
+    background-color: #fbf0f1;
+    padding: 2rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.p1z3 h2:not(:last-child){
+    font-size: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+    font-family: 'Gilmer Regular', Arial, Helvetica, sans-serif;
+    padding-bottom: 3rem;
+}
+
+.p1z3 p{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 2rem;
+    font-family: 'Gilmer Light', Arial, Helvetica, sans-serif;
+}
+
 @media screen and (max-width: 965px) {
     .p1z1 {
         flex-direction: column;
