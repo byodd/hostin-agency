@@ -1,8 +1,45 @@
 const header = document.querySelector("header");
+const body = document.querySelector("body");
 const biotxt = document.querySelector(".bio");
 const biobig = document.querySelector(".biobig");
-
 const illustration = document.querySelector(".p1z1 img");
+const scrollElements = document.querySelectorAll(".js-scroll");
+
+const elementInView = (el, dividend = 1) => {
+    const elementTop = el.getBoundingClientRect().top;
+
+    return (
+        elementTop <=
+        (window.innerHeight || document.documentElement.clientHeight) / dividend
+    );
+};
+
+const elementOutofView = (el) => {
+    const elementTop = el.getBoundingClientRect().top;
+
+    return (
+        elementTop > (window.innerHeight || document.documentElement.clientHeight)
+    );
+};
+
+const displayScrollElement = (element) => {
+    element.classList.add("scrolled");
+};
+
+
+
+const handleScrollAnimation = () => {
+    scrollElements.forEach((el) => {
+        if (elementInView(el, 1.25)) {
+            displayScrollElement(el);
+        } 
+    })
+}
+
+window.addEventListener("scroll", () => {
+    handleScrollAnimation();
+});
+
 
 /**Animation titre */
 
@@ -96,6 +133,7 @@ var $jscomp$this = this;
     }; n.random = function (a, b) { return Math.floor(Math.random() * (b - a + 1)) + a }; return n
 });
 
+
 /**Apparition Scroll */
 
 window.addEventListener("scroll", (e) => {
@@ -158,44 +196,3 @@ anime.timeline({ loop: false })
         easing: "easeOutExpo",
         delay: 1000
     });
-
-const scrollElements = document.querySelectorAll(".js-scroll");
-
-const elementInView = (el, dividend = 1) => {
-    const elementTop = el.getBoundingClientRect().top;
-
-    return (
-        elementTop <=
-        (window.innerHeight || document.documentElement.clientHeight) / dividend
-    );
-};
-
-const elementOutofView = (el) => {
-    const elementTop = el.getBoundingClientRect().top;
-
-    return (
-        elementTop > (window.innerHeight || document.documentElement.clientHeight)
-    );
-};
-
-const displayScrollElement = (element) => {
-    element.classList.add("scrolled");
-};
-
-const hideScrollElement = (element) => {
-    element.classList.remove("scrolled");
-};
-
-const handleScrollAnimation = () => {
-    scrollElements.forEach((el) => {
-        if (elementInView(el, 1.25)) {
-            displayScrollElement(el);
-        } else if (elementOutofView(el)) {
-            hideScrollElement(el)
-        }
-    })
-}
-
-window.addEventListener("scroll", () => {
-    handleScrollAnimation();
-});
