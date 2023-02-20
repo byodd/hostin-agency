@@ -3,6 +3,7 @@ const body = document.querySelector("body");
 const biotxt = document.querySelector(".bio");
 const biobig = document.querySelector(".biobig");
 const illustration = document.querySelector(".p1z1 img");
+const illustration2 = document.querySelector(".p2z1 img");
 const scrollElements = document.querySelectorAll(".js-scroll");
 
 const elementInView = (el, dividend = 1) => {
