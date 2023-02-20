@@ -38,7 +38,7 @@ header {
     top: 0;
     left: 0;
     height: 4.625rem;
-    margin-top: 0.5rem;
+    margin-top: 0rem;
     background-color: #ffffff;
     margin-bottom: 0.5rem;
     z-index: 100;
@@ -237,7 +237,7 @@ p {
     overflow: hidden;
 }
 
-figure{
+figure {
     margin: 0;
 }
 
@@ -271,21 +271,20 @@ figure img {
     width: 70%;
 }
 
-.p1z3{
+.p1z3 {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 20rem;
 }
 
-.p1z3 div{
+.p1z3 div {
     background-color: #fbf0f1;
     padding: 2rem;
     padding-top: 10rem;
     padding-bottom: 10rem;
 }
 
-.p1z3 h2:not(:last-child){
+.p1z3 h2:not(:last-child) {
     font-size: 2rem;
     margin: 0 auto;
     text-align: center;
@@ -294,12 +293,150 @@ figure img {
     padding-bottom: 3rem;
 }
 
-.p1z3 p{
+.p1z3 p {
     width: 50%;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 2rem;
     font-family: 'Gilmer Light', Arial, Helvetica, sans-serif;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact h1 {
+    font-family: 'Gilmer Light', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: #000000;
+    padding: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.contact img {
+    width: 40%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+.contact-form {
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form p {
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    width: 40%;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+label input {
+    font-size: 1.3rem;
+}
+
+label input,
+textarea {
+    margin-top: 0.6rem;
+    resize: none;
+}
+
+select {
+    width: 85%;
+    font-size: 1.4rem;
+    font-family: 'Gilmer Regular', Arial, Helvetica, sans-serif;
+    margin-bottom: 2rem;
+    padding: 0.4rem;
+    padding-left: 1.3rem;
+    border-radius: 3rem;
+}
+
+form label:nth-last-child(2) {
+    width: 95%;
+}
+
+input[type="submit"] {
+    width: 25%;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-family: 'Gilmer Regular', Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #f62b32;
+    border-color: #f62b32;
+    background-color: #ffffff;
+}
+
+input[type="submit"]:hover {
+    color: #ffffff;
+    border-color: #f62b32;
+    background-color: #f62b32;
+}
+
+footer {
+    display: flex;
+    justify-content:space-around;
+}
+
+footer img {
+    width: 10%;
+    padding: 10rem;
+    margin-right: auto;
+}
+
+.menu-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 16rem;
+}
+
+.menu-footer a{
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 0.6rem;
+}
+
+.menu-footer a:hover{
+    color: #606060;
+}
+
+.partage {
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    color: #2f2f2f;
+    background-color: #ffffff0f;
+    outline: 1px solid #2f2f2f;
+    font-family:  'Gilmer Regular', Arial, Helvetica, sans-serif;
+}
+
+.partage:hover {
+    color: #7c7b7c;
+    background-color: #ffffff0f;
+    outline: 1px solid #7c7c7c;
 }
 
 @media screen and (max-width: 965px) {

@@ -153,7 +153,6 @@ window.addEventListener("scroll", (e) => {
         biotxt.style.opacity = 1;
     }
 
-    console.log(e.pageY)
 
     if (window.scrollY >= 50) {
         illustration.style.transform = ("translateX(0%)")
