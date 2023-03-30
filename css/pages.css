@@ -162,13 +162,11 @@ h1 {
     padding-top: 2rem;
     padding-bottom: 2rem;
     width: 100%;
-
 }
 
 .partner img{
-    width: 10%;
-    height: 20%;
-    filter: brightness(0) invert(1);
+    width: 10rem;
+    filter: brightness(0) invert(1) drop-shadow(0.1rem 0.1rem 0 rgba(0, 0, 0, 0.464)) ;
 }
 
  .present:not(:last-child){
@@ -484,7 +482,9 @@ footer img {
     color: #2f2f2f;
     background-color: #ffffff0f;
     outline: 1px solid #2f2f2f;
-    font-family:  'Gilmer Regular', Arial, Helvetica, sans-serif;   
+    font-family:  'Gilmer Regular', Arial, Helvetica, sans-serif;
+    display: inline-block;
+    margin-top: 0.6rem;  
 }
 
 .partage:hover {
@@ -504,14 +504,72 @@ footer img {
         width: 100%;
     }
 
+    h1 {
+        font-size: 2rem;
+        padding:1rem ;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 0.8rem;
+        margin: 0rem;
+    }
+
+    .partners p{
+        width: 100%;
+    }
+
     .p1z1 img {
         width: 100%;
+    }
+
+    .partner img{
+        width: 5rem;
+    }
+
+    .partners div:last-child{
+        padding: 1.5rem;
+    }
+
+    .present {
+        flex-direction: column;
+    }
+
+    .present img{
+        width: 100%;
+    }
+
+    .present .bio{
+        width: 80%;
+        height: 100%;
     }
 
     .bio,
     .biobig {
         width: 100%;
+        padding: 3rem;
         padding-left: 5rem;
+
     }
 
+    .partage{
+        padding: 0.5rem;
+        font-size: 0.5rem;
+    }
+
+    .present:nth-child(2){
+        flex-direction: column-reverse;
+    }
+
+    .present:not(:last-child) {
+        padding-bottom: 0;
+    }
+
+    .text-zone:last-child p {
+        padding: 2rem;
+    }
 }
