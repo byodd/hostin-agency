@@ -157,14 +157,18 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     background-color: #fbf0f1;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     width: 100%;
 
 }
 
 .partner img{
-    width: 20%;
-    filter: drop-shadow(0.1rem 0.1rem 0.05rem #000000););    
+    width: 10%;
+    height: 20%;
+    filter: brightness(0) invert(1);
 }
 
  .present:not(:last-child){
@@ -400,7 +404,6 @@ form label {
     flex-direction: column;
     font-size: 1.4rem;
     width: 45%;
-    padding-right: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -481,7 +484,7 @@ footer img {
     color: #2f2f2f;
     background-color: #ffffff0f;
     outline: 1px solid #2f2f2f;
-    font-family:  'Gilmer Regular', Arial, Helvetica, sans-serif;
+    font-family:  'Gilmer Regular', Arial, Helvetica, sans-serif;   
 }
 
 .partage:hover {
