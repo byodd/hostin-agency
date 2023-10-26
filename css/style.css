@@ -112,6 +112,7 @@ header .logo a img{
 }
 
 /**Main**/
+
 .main-video{
     width: 100%;
     height: 100vh;
@@ -154,4 +155,19 @@ header .logo a img{
 
 .maintext a span:last-child {
     margin-left: 0.6rem;
+}
+
+.invisible{
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .invisible{
+        display: inline;
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        z-index: 100;
+        background: #000;
+    }
 }
